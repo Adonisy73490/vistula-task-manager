@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Manager</title>
+    <style>
+        body { font-family: sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+        .task-item { border: 1px solid #ccc; border-radius: 6px; padding: .6rem; margin: .5rem 0; }
+        .task-item.done .task-title { text-decoration: line-through; }
+        #status-message { min-height: 1.5rem; color: #b00020; }
+    </style>
+</head>
+<body>
+<h1>Task Manager</h1>
+<p>Student ID: <span id="student-id">73490</span></p>
+
+<form id="task-form">
+    <input id="task-title" placeholder="Title" required>
+    <input id="task-description" placeholder="Description">
+    <button id="task-submit" type="submit">Add task</button>
+</form>
+
+<p id="status-message"></p>
+<div id="task-list"></div>
+
+<p><a id="contribution-link" href="contribution.html">Contribution page</a></p>
+<script src="app.js"></script>
+</body>
+</html>
